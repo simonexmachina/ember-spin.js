@@ -1,0 +1,24 @@
+{
+  "name": "ember-spin.js",
+  "version": "1.0.0",
+  "authors": [
+    "Simon Wade <simon.wade@gmail.com>"
+  ],
+  "description": "An Ember.js component for displaying a spinning loading indicator using spin.js.",
+  "main": "spinner.js",
+  "keywords": [
+    "ember.js"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/aexmachina/ember-spin.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "spin.js": "~1.3.2"
+  }
+}
