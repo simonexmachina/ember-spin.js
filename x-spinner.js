@@ -3,12 +3,17 @@
  * 
  * Implementation is Eric Berry's (@cavneb), and I've just created the bower module.
  * 
- * BE AWARE that you'll need to define an empty `components/ic-spinner` template 
- * or this won't work. See [this issue](https://github.com/emberjs/ember.js/issues/3231)
+ * You need to do two things to make this work:
+ * 
+ * 1. Define an empty `components/em-spinner` template. See [this issue](https://github.com/emberjs/ember.js/issues/3231)
  * if you (like me) think this is unfortunate.
+ * 2. Include this file after you define your `App = Ember.Application.create()`.
+ * See [this discussion](http://discuss.emberjs.com/t/combining-component-logic-and-template-together-in-single-file/2879/10)
+ * for a discussion of ways to improve this.
+ * 
  * @see http://fgnass.github.io/spin.js/ for usage info
  */
-App.IcSpinnerComponent = Ember.Component.extend({
+App.XSpinnerComponent = Ember.Component.extend({
   
   lines    : 12, // The number of lines to draw
   length   : 6, // The length of each line
