@@ -3,11 +3,7 @@
  * 
  * Implementation is Eric Berry's (@cavneb), and I've just created the bower module.
  * 
- * You need to do two things to make this work:
- * 
- * 1. Define an empty `components/em-spinner` template. See [this issue](https://github.com/emberjs/ember.js/issues/3231)
- * if you (like me) think this is unfortunate.
- * 2. Include this file after you define your `App = Ember.Application.create()`.
+ * You must nclude this file after you define your `App = Ember.Application.create()`.
  * See [this discussion](http://discuss.emberjs.com/t/combining-component-logic-and-template-together-in-single-file/2879/10)
  * for a discussion of ways to improve this.
  * 
@@ -60,3 +56,4 @@ App.XSpinnerComponent = Ember.Component.extend({
   }.on('willDestroyElement')
     
 });
+Ember.Handlebars.helper('x-spinner', App.XSpinnerComponent);
