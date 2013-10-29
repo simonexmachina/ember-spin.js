@@ -26,7 +26,6 @@ App.IcSpinnerComponent = Ember.Component.extend({
   zIndex   : 2e9, // The z-index (defaults to 2000000000)
   top      : 'auto', // Top position relative to parent in px
   left     : 'auto', // Left position relative to parent in px
-  template : Em.Handlebars.compile('{{foo}}'),
 
   showSpinner: function() {
     var target = this.get('element');
