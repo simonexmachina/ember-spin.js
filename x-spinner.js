@@ -9,8 +9,8 @@
  * 
  * @see http://fgnass.github.io/spin.js/ for usage info
  */
-App.XSpinnerComponent = Ember.Component.extend({
-  
+XSpinnerComponent = Ember.Component.extend({
+
   lines    : 12, // The number of lines to draw
   length   : 6, // The length of each line
   width    : 2, // The line thickness
@@ -56,4 +56,4 @@ App.XSpinnerComponent = Ember.Component.extend({
   }.on('willDestroyElement')
     
 });
-Ember.Handlebars.helper('x-spinner', App.XSpinnerComponent);
+Ember.Handlebars.helper('x-spinner', XSpinnerComponent);
